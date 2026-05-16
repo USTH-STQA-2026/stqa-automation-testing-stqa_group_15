@@ -17,16 +17,17 @@ Sử dụng **Playwright + Python** để kiểm thử hệ thống Mượn sác
 
 |              | Thông tin                    |
 | ------------ | ---------------------------- |
-| **Tên nhóm** | `<!-- VD: Nhóm 1 -->`        |
-| **Lớp**      | `<!-- VD: SE001.P11 -->`     |
-| **Học kỳ**   | `<!-- VD: HK2 2025-2026 -->` |
+| **Tên nhóm** | Nhóm 15 |
+| **Lớp**      | SE125.O1     |
+| **Học kỳ**   | HK2 2025-2026 |
 
 | #   | MSSV | Họ và tên | Vai trò     |
 | --- | ---- | --------- | ----------- |
-| 1   |      |           | Nhóm trưởng |
-| 2   |      |           | Thành viên  |
-| 3   |      |           | Thành viên  |
-| 4   |      |           | Thành viên  |
+| 1   | 23BA14004 | Nghiêm Trọng Quốc Anh  | Nhóm trưởng |
+| 2   | 23BA14136 | Vũ Quang Huy | Thành viên  |
+| 3   | ES.2510002| Tomy Tavanae-Bouteilley   | Thành viên  |
+| 4   | 23BA14118 | Bùi Việt Hoàng   | Thành viên  |
+| 5   | 23BA14131 | Nguyễn Khắc Hưng  | Thành viên  |
 
 ---
 
