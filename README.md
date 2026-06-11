@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/ZpUiBug-)
 # STQA Library Automation — Starter Template
 
 Bài tập thực hành **Kiểm thử Web UI tự động** cho môn **Kiểm thử và Đảm bảo chất lượng phần mềm (STQA)**.
@@ -16,16 +17,17 @@ Sử dụng **Playwright + Python** để kiểm thử hệ thống Mượn sác
 
 |              | Thông tin                    |
 | ------------ | ---------------------------- |
-| **Tên nhóm** | `<!-- VD: Nhóm 1 -->`        |
-| **Lớp**      | `<!-- VD: SE001.P11 -->`     |
-| **Học kỳ**   | `<!-- VD: HK2 2025-2026 -->` |
+| **Tên nhóm** | Nhóm 15 |
+| **Lớp**      | SE125.O1     |
+| **Học kỳ**   | HK2 2025-2026 |
 
 | #   | MSSV | Họ và tên | Vai trò     |
 | --- | ---- | --------- | ----------- |
-| 1   |      |           | Nhóm trưởng |
-| 2   |      |           | Thành viên  |
-| 3   |      |           | Thành viên  |
-| 4   |      |           | Thành viên  |
+| 1   | 23BA14004 | Nghiêm Trọng Quốc Anh  | Nhóm trưởng |
+| 2   | 23BA14136 | Vũ Quang Huy | Thành viên  |
+| 3   | ES.2510002| Tomy Tavanae-Bouteilley   | Thành viên  |
+| 4   | 23BA14118 | Bùi Việt Hoàng   | Thành viên  |
+| 5   | 23BA14131 | Nguyễn Khắc Hưng  | Thành viên  |
 
 ---
 
@@ -84,10 +86,12 @@ stqa-library-automation-starter/
 ├── LICENSE
 ├── README.md
 └── tests/
-    ├── test_login.py           # TC-01 (example / mẫu) + TC-02, TC-03 (TODO)
-    ├── test_search.py          # TC-04 ~ TC-07 (TODO)
-    ├── test_borrow_return.py   # TC-08 ~ TC-10 (TODO)
-    └── test_general.py         # TC-11 ~ TC-12 (TODO)
+    ├── test_login.py           # TC-01 ~ TC-03 (completed / đã hoàn thành)
+    ├── test_search.py          # TC-04 ~ TC-07 (completed / đã hoàn thành)
+    ├── test_borrow_return.py   # TC-08 ~ TC-10 (completed / đã hoàn thành)
+    ├── test_general.py         # TC-11 ~ TC-12 (completed / đã hoàn thành)
+    ├── test_bonus.py           # Bonus coverage (completed / đã hoàn thành)
+    └── test_missing_coverage.py # Missing coverage — REQ-04/05/06/07/08 (completed / đã hoàn thành)
 ```
 
 ---
@@ -186,20 +190,57 @@ CI sẽ thực hiện:
 
 | TC    | Mô tả                                                | File                    | Trạng thái |
 | ----- | ---------------------------------------------------- | ----------------------- | ---------- |
-| TC-01 | Đăng nhập thành công (*Login success*)               | `test_login.py`         | ✅ Mẫu      |
-| TC-02 | Đăng nhập thất bại — sai mật khẩu (*Wrong password*) | `test_login.py`         | 🔴 TODO     |
-| TC-03 | Đăng nhập thất bại — để trống (*Empty fields*)       | `test_login.py`         | 🔴 TODO     |
-| TC-04 | Tìm sách theo tên (*Search by name*)                 | `test_search.py`        | 🔴 TODO     |
-| TC-05 | Tìm sách — không có kết quả (*No result*)            | `test_search.py`        | 🔴 TODO     |
-| TC-06 | Lọc theo thể loại (*Filter by category*)             | `test_search.py`        | 🔴 TODO     |
-| TC-07 | Tìm theo tác giả (*Search by author*)                | `test_search.py`        | 🔴 TODO     |
-| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | 🔴 TODO     |
-| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | 🔴 TODO     |
-| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | 🔴 TODO     |
-| TC-11 | Đăng xuất (*Logout*)                                 | `test_general.py`       | 🔴 TODO     |
-| TC-12 | Chuyển ngôn ngữ sang EN (*Switch language*)          | `test_general.py`       | 🔴 TODO     |
+| TC-01 | Đăng nhập thành công (*Login success*)               | `test_login.py`         | ✅ Completed |
+| TC-02 | Đăng nhập thất bại — sai mật khẩu (*Wrong password*) | `test_login.py`         | ✅ Completed |
+| TC-03 | Đăng nhập thất bại — để trống (*Empty fields*)       | `test_login.py`         | ✅ Completed |
+| TC-04 | Tìm sách theo tên (*Search by name*)                 | `test_search.py`        | ✅ Completed |
+| TC-05 | Tìm sách — không có kết quả (*No result*)            | `test_search.py`        | ✅ Completed |
+| TC-06 | Lọc theo thể loại (*Filter by category*)             | `test_search.py`        | ✅ Completed |
+| TC-07 | Tìm theo tác giả (*Search by author*)                | `test_search.py`        | ✅ Completed |
+| TC-08 | Mượn sách (*Borrow a book*)                          | `test_borrow_return.py` | ✅ Completed |
+| TC-09 | Xem sách đang mượn (*View borrowed books*)           | `test_borrow_return.py` | ✅ Completed |
+| TC-10 | Trả sách (*Return a book*)                           | `test_borrow_return.py` | ✅ Completed |
+| TC-11 | Đăng xuất (*Logout*)                                 | `test_general.py`       | ✅ Completed |
+| TC-12 | Chuyển ngôn ngữ sang EN (*Switch language*)          | `test_general.py`       | ✅ Completed |
 
-**Yêu cầu:** Hoàn thành tất cả 11 test case còn lại (TC-02 → TC-12).
+**Kết quả hiện tại:** Đã hoàn thành 12/12 test case bắt buộc, 8 bonus tests, và 10 missing coverage tests, tổng cộng 30 automated tests.
+
+### Bonus Test Cases
+
+| Bonus | Mô tả | File | Trạng thái |
+| ----- | ---- | ---- | ---------- |
+| B-01 | Đăng nhập thất bại — email không tồn tại (`pytest.mark.parametrize`) | `test_bonus.py` | ✅ Completed |
+| B-02 | Đăng nhập thất bại — sai mật khẩu (`pytest.mark.parametrize`) | `test_bonus.py` | ✅ Completed |
+| B-03 | Đăng nhập thất bại — để trống (`pytest.mark.parametrize`) | `test_bonus.py` | ✅ Completed |
+| B-04 | Tìm kiếm không phân biệt chữ hoa/thường với từ khóa `flutter` | `test_bonus.py` | ✅ Completed |
+| B-05 | Thành viên tạm ngưng không thể mượn sách | `test_bonus.py` | ✅ Completed |
+| B-06 | Thành viên hết hạn không thể mượn sách và thông báo đúng lý do | `test_bonus.py` | ✅ Completed |
+| B-07 | Sau đăng nhập, danh sách sách hiển thị đầy đủ thông tin chính | `test_bonus.py` | ✅ Completed |
+| B-08 | Sách đã được mượn không có hành vi cho mượn như sách có sẵn | `test_bonus.py` | ✅ Completed |
+
+### Missing Coverage Tests
+
+| MC    | Mô tả                                                          | File                          | REQ       | Trạng thái |
+| ----- | -------------------------------------------------------------- | ----------------------------- | --------- | ---------- |
+| MC-01 | Trả sách quá hạn phải hiện cảnh báo quá hạn                   | `test_missing_coverage.py`    | REQ-05    | ❌ BUG FOUND |
+| MC-02 | Mượn quá 3 sách phải bị từ chối                               | `test_missing_coverage.py`    | REQ-04    | ❌ BUG FOUND |
+| MC-03 | Thành viên chỉ thấy phiếu mượn của chính mình                 | `test_missing_coverage.py`    | REQ-08    | ✅ PASS |
+| MC-04 | Email không hợp lệ (thiếu dấu chấm) phải bị từ chối          | `test_missing_coverage.py`    | REQ-07    | ❌ BUG FOUND |
+| MC-05 | Email đã tồn tại phải bị từ chối                              | `test_missing_coverage.py`    | REQ-07    | ✅ PASS |
+| MC-06 | Thêm thành viên mới hợp lệ thành công                         | `test_missing_coverage.py`    | REQ-07    | ✅ PASS |
+| MC-07 | Thủ thư kiểm tra sách quá hạn → phiếu chuyển "Quá hạn"       | `test_missing_coverage.py`    | REQ-06    | ✅ PASS |
+| MC-08 | Mượn sách thứ 4 phải bị từ chối ngay sau dialog xác nhận      | `test_missing_coverage.py`    | REQ-04    | ❌ BUG FOUND |
+| MC-09 | Thành viên không được xem phiếu của người khác qua tra cứu    | `test_missing_coverage.py`    | REQ-08    | ❌ BUG FOUND |
+| MC-10 | Thành viên không được trả sách thay cho người khác            | `test_missing_coverage.py`    | REQ-08    | ❌ BUG FOUND |
+
+> Tests đánh dấu ❌ BUG FOUND là các test **cố ý FAIL** để ghi nhận lỗi thực sự trong hệ thống. Theo đề bài: "Test FAIL vẫn được điểm — miễn là test chạy được và assertion có ý nghĩa."
+
+### Test Evidence
+
+- Latest local command: `pytest -v -s`
+- Result: `24 passed, 6 failed` (6 failures = intentional bug documentation)
+- Screenshots: `screenshots/`
+- Detailed report: `REPORT.md`
 
 ---
 
